@@ -21,18 +21,6 @@ extension MenuViewController {
     }
 }
 
-// MARK: - Functions
-extension MenuViewController {
-    private func parseJson() {
-        if let fileURL = Bundle.main.url(forResource: "MenuItens.json", withExtension: nil) {
-            let jsonData = try! Data(contentsOf: fileURL)
-            do {
-                menuItens = try! JSONDecoder().decode([MenuItens].self, from: jsonData)
-            }
-        }
-    }
-}
-
 // MARK: - UITableViewDelegate
 extension MenuViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,8 +47,8 @@ extension MenuViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let menuItens = menuItens[section].category
-        return menuItens
+        let title = menuItens[section].category
+        return title
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -1,0 +1,49 @@
+[
+    {
+        "category": "Sandubas",
+        "items": [
+            {
+                "flavour": "Filé Mignon",
+                "price": 29.90
+            },
+            {
+                "flavour": "Almôndega suína",
+                "price": 19.90
+            },
+            {
+                "flavour": "Coração de frango",
+                "price": 19.90
+            }
+        ]
+    },
+    {
+        "category": "Espetinho",
+        "items": [
+            {
+                "flavour": "Coração",
+                "price": 8.00
+            },
+            {
+                "flavour": "Picanha",
+                "price": 18.00
+            },
+            {
+                "flavour": "Lombo com bacon",
+                "price": 10.00
+            }
+        ]
+    },
+    {
+        "category": "Bebidas",
+        "items": [
+            {
+                "flavour": "Refrigerante",
+                "price": 4.90
+            },
+            {
+                "flavour": "Cerveja",
+                "price": 11.90
+            }
+        ]
+    }
+ ]

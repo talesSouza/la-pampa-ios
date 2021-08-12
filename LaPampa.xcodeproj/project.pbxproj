@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C3C6CC426C030DD008E5F85 /* items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C6CC326C030DD008E5F85 /* items.swift */; };
+		1C3C6CC426C030DD008E5F85 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C6CC326C030DD008E5F85 /* Item.swift */; };
 		1C3C6CC826C07B0A008E5F85 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C6CC726C07B0A008E5F85 /* PhotoCollectionViewCell.swift */; };
-		1C3C6CC926C07E2D008E5F85 /* MenuItens.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C7149AB26BFA05F0088527A /* MenuItens.json */; };
+		1C3C6CC926C07E2D008E5F85 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C7149AB26BFA05F0088527A /* menu.json */; };
 		1C71498B26BF62070088527A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C71498A26BF62070088527A /* AppDelegate.swift */; };
 		1C71498D26BF62070088527A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C71498C26BF62070088527A /* SceneDelegate.swift */; };
 		1C71498F26BF62070088527A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C71498E26BF62070088527A /* MainViewController.swift */; };
@@ -19,11 +19,12 @@
 		1C7149A126BF90360088527A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7149A026BF90360088527A /* MenuViewController.swift */; };
 		1C7149A326BF90410088527A /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7149A226BF90410088527A /* AlbumViewController.swift */; };
 		1C7149A526BF91340088527A /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7149A426BF91340088527A /* MenuItemTableViewCell.swift */; };
-		1C7149AA26BF95EA0088527A /* MenuItens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7149A926BF95EA0088527A /* MenuItens.swift */; };
+		1C7149AA26BF95EA0088527A /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7149A926BF95EA0088527A /* MenuItem.swift */; };
+		47AC678C26C4BC2700903145 /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AC678B26C4BC2700903145 /* MenuService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C3C6CC326C030DD008E5F85 /* items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = items.swift; sourceTree = "<group>"; };
+		1C3C6CC326C030DD008E5F85 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1C3C6CC726C07B0A008E5F85 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		1C71498726BF62070088527A /* LaPampa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaPampa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C71498A26BF62070088527A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,8 +37,9 @@
 		1C7149A026BF90360088527A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1C7149A226BF90410088527A /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		1C7149A426BF91340088527A /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
-		1C7149A926BF95EA0088527A /* MenuItens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItens.swift; sourceTree = "<group>"; };
-		1C7149AB26BFA05F0088527A /* MenuItens.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MenuItens.json; sourceTree = "<group>"; };
+		1C7149A926BF95EA0088527A /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		1C7149AB26BFA05F0088527A /* menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		47AC678B26C4BC2700903145 /* MenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				1C71499F26BF62180088527A /* Controller */,
 				1C7149A826BF95E20088527A /* Model */,
 				470CA7CA26C4B479006F4E48 /* Resources */,
+				47AC678A26C4BBD800903145 /* Service */,
 				1C71499E26BF62100088527A /* View */,
 			);
 			path = LaPampa;
@@ -118,8 +121,8 @@
 		1C7149A826BF95E20088527A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1C7149A926BF95EA0088527A /* MenuItens.swift */,
-				1C3C6CC326C030DD008E5F85 /* items.swift */,
+				1C7149A926BF95EA0088527A /* MenuItem.swift */,
+				1C3C6CC326C030DD008E5F85 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,9 +150,17 @@
 		470CA7CB26C4B4B8006F4E48 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				1C7149AB26BFA05F0088527A /* MenuItens.json */,
+				1C7149AB26BFA05F0088527A /* menu.json */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		47AC678A26C4BBD800903145 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				47AC678B26C4BC2700903145 /* MenuService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C3C6CC926C07E2D008E5F85 /* MenuItens.json in Resources */,
+				1C3C6CC926C07E2D008E5F85 /* menu.json in Resources */,
 				1C71499726BF62080088527A /* LaunchScreen.storyboard in Resources */,
 				1C71499426BF62080088527A /* Assets.xcassets in Resources */,
 				1C71499226BF62070088527A /* Main.storyboard in Resources */,
@@ -225,12 +236,13 @@
 			files = (
 				1C71498F26BF62070088527A /* MainViewController.swift in Sources */,
 				1C7149A326BF90410088527A /* AlbumViewController.swift in Sources */,
-				1C7149AA26BF95EA0088527A /* MenuItens.swift in Sources */,
-				1C3C6CC426C030DD008E5F85 /* items.swift in Sources */,
+				1C7149AA26BF95EA0088527A /* MenuItem.swift in Sources */,
+				1C3C6CC426C030DD008E5F85 /* Item.swift in Sources */,
 				1C71498B26BF62070088527A /* AppDelegate.swift in Sources */,
 				1C3C6CC826C07B0A008E5F85 /* PhotoCollectionViewCell.swift in Sources */,
 				1C7149A526BF91340088527A /* MenuItemTableViewCell.swift in Sources */,
 				1C71498D26BF62070088527A /* SceneDelegate.swift in Sources */,
+				47AC678C26C4BC2700903145 /* MenuService.swift in Sources */,
 				1C7149A126BF90360088527A /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -363,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
