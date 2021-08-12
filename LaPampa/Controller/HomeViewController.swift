@@ -1,17 +1,25 @@
 import UIKit
 
-class MainViewController: UIViewController {
+class HomeViewController: UIViewController {
     
     // MARK: - IBOutlet
     @IBOutlet weak var menuLabel: UILabel!
     @IBOutlet weak var picturesLabel: UILabel!
+    
+    // MARK: - ComputedProperty
+    var labels: [UILabel] {
+        [menuLabel, picturesLabel]
+    }
+    
+    // MARK: - StoredProperty
 }
 
 // MARK: - LifeCicle
-extension MainViewController {
+extension HomeViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        settingLabels()
+        setupLayout()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -19,13 +27,11 @@ extension MainViewController {
     }
 }
 
-// MARK: - Functions
-extension MainViewController {
+// MARK: - Setup
+extension HomeViewController {
     
-    
-    private func settingLabels() {
-        settingLayout(object: menuLabel)
-        settingLayout(object: picturesLabel)
+    private func setupLayout() {
+        labels.forEach { $0.setupBorder() }
     }
 }
 
