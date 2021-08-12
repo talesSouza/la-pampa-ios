@@ -70,24 +70,21 @@
 		1C71498926BF62070088527A /* LaPampa */ = {
 			isa = PBXGroup;
 			children = (
-				1C71498A26BF62070088527A /* AppDelegate.swift */,
-				1C71498C26BF62070088527A /* SceneDelegate.swift */,
-				1C7149A826BF95E20088527A /* Model */,
+				470CA7C926C4B462006F4E48 /* App */,
 				1C71499F26BF62180088527A /* Controller */,
-				1C71499E26BF62100088527A /* Storyboard */,
-				1C71499326BF62080088527A /* Assets.xcassets */,
-				1C71499526BF62080088527A /* LaunchScreen.storyboard */,
-				1C71499826BF62080088527A /* Info.plist */,
+				1C7149A826BF95E20088527A /* Model */,
+				470CA7CA26C4B479006F4E48 /* Resources */,
+				1C71499E26BF62100088527A /* View */,
 			);
 			path = LaPampa;
 			sourceTree = "<group>";
 		};
-		1C71499E26BF62100088527A /* Storyboard */ = {
+		1C71499E26BF62100088527A /* View */ = {
 			isa = PBXGroup;
 			children = (
 				1C71499026BF62070088527A /* Main.storyboard */,
 			);
-			path = Storyboard;
+			path = View;
 			sourceTree = "<group>";
 		};
 		1C71499F26BF62180088527A /* Controller */ = {
@@ -123,9 +120,36 @@
 			children = (
 				1C7149A926BF95EA0088527A /* MenuItens.swift */,
 				1C3C6CC326C030DD008E5F85 /* items.swift */,
-				1C7149AB26BFA05F0088527A /* MenuItens.json */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		470CA7C926C4B462006F4E48 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1C71498A26BF62070088527A /* AppDelegate.swift */,
+				1C71498C26BF62070088527A /* SceneDelegate.swift */,
+				1C71499826BF62080088527A /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		470CA7CA26C4B479006F4E48 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				470CA7CB26C4B4B8006F4E48 /* JSON */,
+				1C71499326BF62080088527A /* Assets.xcassets */,
+				1C71499526BF62080088527A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		470CA7CB26C4B4B8006F4E48 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				1C7149AB26BFA05F0088527A /* MenuItens.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,7 +380,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z5AHKNAYZ3;
-				INFOPLIST_FILE = LaPampa/Info.plist;
+				INFOPLIST_FILE = LaPampa/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,7 +399,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z5AHKNAYZ3;
-				INFOPLIST_FILE = LaPampa/Info.plist;
+				INFOPLIST_FILE = LaPampa/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
