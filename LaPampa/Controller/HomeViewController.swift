@@ -3,12 +3,12 @@ import UIKit
 class HomeViewController: UIViewController {
     
     // MARK: - IBOutlet
-    @IBOutlet weak var menuLabel: UILabel!
-    @IBOutlet weak var picturesLabel: UILabel!
+    @IBOutlet weak var menuButton: UIButton!
+    @IBOutlet weak var picturesButton: UIButton!
     
     // MARK: - Computed Properties
-    var labels: [UILabel] {
-        [menuLabel, picturesLabel]
+    var buttons: [UIButton] {
+        [menuButton, picturesButton]
     }
     
     // MARK: - Stored Properties
@@ -31,7 +31,7 @@ extension HomeViewController {
 extension HomeViewController {
     
     private func setupLayout() {
-        labels.forEach { $0.setupBorder() }
+        buttons.forEach { $0.setupBorder() }
     }
 }
 
