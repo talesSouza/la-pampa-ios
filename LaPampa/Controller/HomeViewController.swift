@@ -6,12 +6,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var menuLabel: UILabel!
     @IBOutlet weak var picturesLabel: UILabel!
     
-    // MARK: - ComputedProperty
+    // MARK: - Computed Properties
     var labels: [UILabel] {
         [menuLabel, picturesLabel]
     }
     
-    // MARK: - StoredProperty
+    // MARK: - Stored Properties
 }
 
 // MARK: - LifeCicle

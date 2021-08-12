@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DyQ-DN-Jvu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -12,11 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="LaPampa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciE-Rf-bXW">
-                                <rect key="frame" x="529" y="320" width="40" height="40"/>
+                                <rect key="frame" x="343" y="582" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="KzO-Bl-gZz"/>
                                     <constraint firstAttribute="width" constant="40" id="fez-d3-Dim"/>
@@ -28,7 +30,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conheça nosso cardápio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pc2-E3-eeO">
-                                <rect key="frame" x="92" y="322" width="416" height="40"/>
+                                <rect key="frame" x="92" y="584" width="230" height="40"/>
                                 <color key="backgroundColor" red="0.0057420183171057113" green="0.13123934078692925" blue="0.15622986469072164" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="xVp-Nm-9Hj"/>
@@ -38,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confira nossa qualidade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMA-0c-bb8">
-                                <rect key="frame" x="92" y="436" width="416" height="40"/>
+                                <rect key="frame" x="92" y="698" width="230" height="40"/>
                                 <color key="backgroundColor" red="0.0057420183169999998" green="0.13123934079999999" blue="0.1562298647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -49,14 +51,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconLaPampa" translatesAutoresizingMaskIntoConstraints="NO" id="eNR-aX-hsO">
-                                <rect key="frame" x="234" y="-157" width="318" height="327"/>
+                                <rect key="frame" x="48" y="105" width="318" height="327"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="327" id="VjW-Tb-X96"/>
                                     <constraint firstAttribute="width" constant="318" id="YUd-W1-4Vj"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKP-5D-Lgj">
-                                <rect key="frame" x="529" y="431" width="40" height="40"/>
+                                <rect key="frame" x="343" y="693" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="cK3-Ep-omT"/>
                                     <constraint firstAttribute="width" constant="40" id="mRz-yV-mTT"/>
@@ -103,11 +105,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="q5D-nP-feJ" customClass="PicturesViewController" customModule="LaPampa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lBr-Eh-0s8">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qMV-BS-kIr">
-                                <rect key="frame" x="0.0" y="96" width="600" height="504"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                                 <color key="backgroundColor" red="0.0057420183169999998" green="0.13123934079999999" blue="0.1562298647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nP9-I6-GWk">
                                     <size key="itemSize" width="128" height="128"/>
@@ -116,8 +118,8 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCollectionViewCell" id="Fvy-eF-3e0" customClass="PhotoCollectionViewCell" customModule="LaPampa" customModuleProvider="target">
-                                        <rect key="frame" x="108.5" y="0.0" width="383" height="452"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pictureCollectionViewCell" id="Fvy-eF-3e0" customClass="PictureCollectionViewCell" customModule="LaPampa" customModuleProvider="target">
+                                        <rect key="frame" x="15.5" y="0.0" width="383" height="452"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cgt-nI-xgy">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="452"/>
@@ -151,7 +153,7 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
-                                            <outlet property="photoImage" destination="Pd8-Sb-LOy" id="b7P-Ku-mNR"/>
+                                            <outlet property="pictureImageView" destination="Pd8-Sb-LOy" id="b7P-Ku-mNR"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -172,7 +174,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Fotos" largeTitleDisplayMode="always" id="5vQ-nZ-rum"/>
                     <connections>
-                        <outlet property="albumCollectionView" destination="qMV-BS-kIr" id="2TG-8n-gfg"/>
+                        <outlet property="pictureCollectionView" destination="qMV-BS-kIr" id="2TG-8n-gfg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xt9-Lf-d52" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -184,22 +186,22 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="PXm-eF-d5c" customClass="MenuViewController" customModule="LaPampa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y0M-MV-wRK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YbQ-mh-cLv">
-                                <rect key="frame" x="0.0" y="96" width="600" height="504"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                                 <color key="backgroundColor" red="0.0059299900469999998" green="0.13553561510000001" blue="0.1613442333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="menuItemCell" rowHeight="70" id="g7f-a5-ue9" customClass="MenuItemTableViewCell" customModule="LaPampa" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="70"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g7f-a5-ue9" id="2GE-kY-u5x">
-                                            <rect key="frame" x="0.0" y="0.0" width="573" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filé Mignon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9R-AW-udu">
-                                                    <rect key="frame" x="16" y="23" width="101" height="24"/>
+                                                    <rect key="frame" x="20" y="23" width="101" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="0tn-JH-iH6"/>
                                                     </constraints>
@@ -208,7 +210,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="R$ 29.90" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsq-jr-VJa">
-                                                    <rect key="frame" x="477.5" y="23" width="81" height="24"/>
+                                                    <rect key="frame" x="287.5" y="23" width="81" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="Hb3-NN-KGg"/>
                                                     </constraints>
@@ -263,7 +265,7 @@
             <objects>
                 <viewController id="a1e-Kl-twb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KdI-JG-t2K">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="vqc-eq-TQ2"/>
                         <color key="backgroundColor" red="0.0059299900469999998" green="0.13553561510000001" blue="0.1613442333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

@@ -3,14 +3,15 @@ import UIKit
 class PicturesViewController: UIViewController {
     
     // MARK: - IBOutlets
-    @IBOutlet weak var albumCollectionView: UICollectionView!
+    @IBOutlet weak var pictureCollectionView: UICollectionView!
     
-    // MARK: - Properties
-    var photos: [UIImage] = [#imageLiteral(resourceName: "laPampa2"), #imageLiteral(resourceName: "sanduba"), #imageLiteral(resourceName: "laPampa3"), #imageLiteral(resourceName: "laPampa"), #imageLiteral(resourceName: "sanduba2"), #imageLiteral(resourceName: "carne")]
+    // MARK: - Stored Properties
+    var pictures: [UIImage] = [#imageLiteral(resourceName: "laPampa2"), #imageLiteral(resourceName: "sanduba"), #imageLiteral(resourceName: "laPampa3"), #imageLiteral(resourceName: "laPampa"), #imageLiteral(resourceName: "sanduba2"), #imageLiteral(resourceName: "carne")]
 }
 
 // MARK: - LifeCycle
 extension PicturesViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,17 +25,19 @@ extension PicturesViewController {
 // MARK: - UICollectionViewDelegate
 extension PicturesViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photos.count
+        return pictures.count
     }
 }
 
 // MARK: - UICollectionViewDataSource
 extension PicturesViewController: UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let photoCell = self.albumCollectionView.dequeueReusableCell(withReuseIdentifier: "photoCollectionViewCell", for: indexPath) as! PhotoCollectionViewCell
-        
-        photoCell.photoImage.image = photos[indexPath.row]
-        
-        return photoCell
+        guard let cell = self.pictureCollectionView.dequeueReusableCell(withReuseIdentifier: "pictureCollectionViewCell", for: indexPath) as? PictureCollectionViewCell
+        else {
+            return UICollectionViewCell()
+        }
+        cell.set(picture: pictures[indexPath.row])
+        return cell
     }
 }

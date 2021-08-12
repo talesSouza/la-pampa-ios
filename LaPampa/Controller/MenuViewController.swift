@@ -5,7 +5,7 @@ class MenuViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var menuTableView: UITableView!
     
-    // MARK: - StoredProperty
+    // MARK: - Stored Properties
     let menuService = MenuService()
     var menuItems: [MenuItem] = []
 }
@@ -36,8 +36,10 @@ extension MenuViewController: UITableViewDelegate {
 extension MenuViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = self.menuTableView.dequeueReusableCell(withIdentifier: "menuItemCell") as! MenuItemTableViewCell
+        guard let cell = self.menuTableView.dequeueReusableCell(withIdentifier: "menuItemCell") as? MenuItemTableViewCell
+        else {
+            return UITableViewCell()
+        }
         
         let menuItem = menuItems[indexPath.section]
         let item = menuItem.items[indexPath.row]
