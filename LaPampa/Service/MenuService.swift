@@ -1,10 +1,3 @@
-//
-//  MenuService.swift
-//  LaPampa
-//
-//  Created by Bruno Moreira on 11/08/21.
-//
-
 import UIKit
 
 class MenuService {

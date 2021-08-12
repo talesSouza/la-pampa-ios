@@ -229,6 +229,7 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="O9R-AW-udu" secondAttribute="bottom" constant="12" id="jMK-bP-Eau"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="itemLabel" destination="O9R-AW-udu" id="bjD-az-EeA"/>
                                             <outlet property="priceLabel" destination="Gsq-jr-VJa" id="ca8-MN-gNI"/>
