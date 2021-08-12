@@ -21,6 +21,7 @@
 		1C7149A526BF91340088527A /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7149A426BF91340088527A /* MenuItemTableViewCell.swift */; };
 		1C7149AA26BF95EA0088527A /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7149A926BF95EA0088527A /* MenuItem.swift */; };
 		47AC678C26C4BC2700903145 /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AC678B26C4BC2700903145 /* MenuService.swift */; };
+		47AC679126C4BD2500903145 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AC679026C4BD2500903145 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		1C7149A926BF95EA0088527A /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		1C7149AB26BFA05F0088527A /* menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		47AC678B26C4BC2700903145 /* MenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuService.swift; sourceTree = "<group>"; };
+		47AC679026C4BD2500903145 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				470CA7C926C4B462006F4E48 /* App */,
 				1C71499F26BF62180088527A /* Controller */,
+				47AC678F26C4BD1600903145 /* Extensions */,
 				1C7149A826BF95E20088527A /* Model */,
 				470CA7CA26C4B479006F4E48 /* Resources */,
 				47AC678A26C4BBD800903145 /* Service */,
@@ -163,6 +166,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		47AC678F26C4BD1600903145 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				47AC679026C4BD2500903145 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,6 +255,7 @@
 				1C71498D26BF62070088527A /* SceneDelegate.swift in Sources */,
 				47AC678C26C4BC2700903145 /* MenuService.swift in Sources */,
 				1C7149A126BF90360088527A /* MenuViewController.swift in Sources */,
+				47AC679126C4BD2500903145 /* UIView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

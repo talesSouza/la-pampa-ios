@@ -21,11 +21,7 @@ extension MainViewController {
 
 // MARK: - Functions
 extension MainViewController {
-    private func settingLayout(object: AnyObject, width: CGFloat = 1, color: UIColor = .white, radius: CGFloat = 5) {
-        object.layer.borderWidth = width
-        object.layer.cornerRadius = radius
-        object.layer.borderColor = color.cgColor
-    }
+    
     
     private func settingLabels() {
         settingLayout(object: menuLabel)
