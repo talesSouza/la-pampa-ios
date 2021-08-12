@@ -12,6 +12,6 @@ extension MenuItemTableViewCell {
     
     func set(item: Item) {
         itemLabel.text = item.flavour
-        priceLabel.text = "R$ \(item.price)"
+        priceLabel.text = "R$ \(String(format: "%.2f", item.price))"
     }
 }
