@@ -17,7 +17,7 @@
 		1C71499426BF62080088527A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C71499326BF62080088527A /* Assets.xcassets */; };
 		1C71499726BF62080088527A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C71499526BF62080088527A /* LaunchScreen.storyboard */; };
 		1C7149A126BF90360088527A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7149A026BF90360088527A /* MenuViewController.swift */; };
-		1C7149A326BF90410088527A /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7149A226BF90410088527A /* AlbumViewController.swift */; };
+		1C7149A326BF90410088527A /* PicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7149A226BF90410088527A /* PicturesViewController.swift */; };
 		1C7149A526BF91340088527A /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7149A426BF91340088527A /* MenuItemTableViewCell.swift */; };
 		1C7149AA26BF95EA0088527A /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7149A926BF95EA0088527A /* MenuItem.swift */; };
 		47AC678C26C4BC2700903145 /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AC678B26C4BC2700903145 /* MenuService.swift */; };
@@ -36,7 +36,7 @@
 		1C71499626BF62080088527A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C71499826BF62080088527A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C7149A026BF90360088527A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		1C7149A226BF90410088527A /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		1C7149A226BF90410088527A /* PicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesViewController.swift; sourceTree = "<group>"; };
 		1C7149A426BF91340088527A /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
 		1C7149A926BF95EA0088527A /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		1C7149AB26BFA05F0088527A /* menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
@@ -97,28 +97,12 @@
 			isa = PBXGroup;
 			children = (
 				1C71498E26BF62070088527A /* HomeViewController.swift */,
-				1C7149A626BF938C0088527A /* Menu */,
-				1C7149A726BF93980088527A /* Album */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		1C7149A626BF938C0088527A /* Menu */ = {
-			isa = PBXGroup;
-			children = (
 				1C7149A026BF90360088527A /* MenuViewController.swift */,
 				1C7149A426BF91340088527A /* MenuItemTableViewCell.swift */,
-			);
-			path = Menu;
-			sourceTree = "<group>";
-		};
-		1C7149A726BF93980088527A /* Album */ = {
-			isa = PBXGroup;
-			children = (
-				1C7149A226BF90410088527A /* AlbumViewController.swift */,
+				1C7149A226BF90410088527A /* PicturesViewController.swift */,
 				1C3C6CC726C07B0A008E5F85 /* PhotoCollectionViewCell.swift */,
 			);
-			path = Album;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		1C7149A826BF95E20088527A /* Model */ = {
@@ -246,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C71498F26BF62070088527A /* HomeViewController.swift in Sources */,
-				1C7149A326BF90410088527A /* AlbumViewController.swift in Sources */,
+				1C7149A326BF90410088527A /* PicturesViewController.swift in Sources */,
 				1C7149AA26BF95EA0088527A /* MenuItem.swift in Sources */,
 				1C3C6CC426C030DD008E5F85 /* Item.swift in Sources */,
 				1C71498B26BF62070088527A /* AppDelegate.swift in Sources */,

@@ -5,15 +5,19 @@ class MenuViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var menuTableView: UITableView!
     
-    // MARK: - Properties
-    var menuItens: [MenuItens] = []
+    // MARK: - StoredProperty
+    let menuService = MenuService()
+    var menuItems: [MenuItem] = []
 }
 
 // MARK: - LifeCycle
 extension MenuViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        parseJson()
+        if let menuItems = menuService.getMenu() {
+            self.menuItems = menuItems
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -24,34 +28,31 @@ extension MenuViewController {
 // MARK: - UITableViewDelegate
 extension MenuViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return menuItens[section].items.count
+        return menuItems[section].items.count
     }
 }
 
 // MARK: - UITableViewDataSource
 extension MenuViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let menuItemCell = self.menuTableView.dequeueReusableCell(withIdentifier: "menuItemCell") as! MenuItemTableViewCell
         
+        let cell = self.menuTableView.dequeueReusableCell(withIdentifier: "menuItemCell") as! MenuItemTableViewCell
         
-        let menuItemAtIndex = menuItens[indexPath.section]
-        let itemAtIndex = menuItemAtIndex.items[indexPath.row]
-        let flavourAtIndex = itemAtIndex.flavour[indexPath.section]
-        menuItemCell.itemLabel.text = flavourAtIndex
+        let menuItem = menuItems[indexPath.section]
+        let item = menuItem.items[indexPath.row]
         
+        cell.set(item: item)
         
-        menuItemCell.itemLabel.text = menuItens[indexPath.row].items[indexPath.row].flavour[indexPath.row]
-        menuItemCell.priceLabel.text = "R$ \((menuItens[indexPath.row].items[indexPath.row].price[indexPath.row]))"
-        
-        return menuItemCell
+        return cell
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let title = menuItens[section].category
+        let title = menuItems[section].category
         return title
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return menuItens.count
+        return menuItems.count
     }
 }

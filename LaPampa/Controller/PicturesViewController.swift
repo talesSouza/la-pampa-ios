@@ -1,6 +1,6 @@
 import UIKit
 
-class AlbumViewController: UIViewController {
+class PicturesViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet weak var albumCollectionView: UICollectionView!
@@ -10,7 +10,7 @@ class AlbumViewController: UIViewController {
 }
 
 // MARK: - LifeCycle
-extension AlbumViewController {
+extension PicturesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,14 +22,14 @@ extension AlbumViewController {
 }
 
 // MARK: - UICollectionViewDelegate
-extension AlbumViewController: UICollectionViewDelegate {
+extension PicturesViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return photos.count
     }
 }
 
 // MARK: - UICollectionViewDataSource
-extension AlbumViewController: UICollectionViewDataSource {
+extension PicturesViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let photoCell = self.albumCollectionView.dequeueReusableCell(withReuseIdentifier: "photoCollectionViewCell", for: indexPath) as! PhotoCollectionViewCell
         
