@@ -25,6 +25,20 @@ extension MenuViewController {
     }
 }
 
+// MARK: - Navigation
+extension MenuViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ItemInfoViewController
+        
+        let rowIndex = menuTableView.indexPathForSelectedRow!.row
+        let sectionIndex = menuTableView.indexPathForSelectedRow!.section
+        
+        let menuItem = menuItems[sectionIndex].items[rowIndex]
+        
+        vc.item = menuItem
+    }
+}
+
 // MARK: - UITableViewDelegate
 extension MenuViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -259,21 +259,33 @@
             </objects>
             <point key="canvasLocation" x="2031.8840579710147" y="-233.03571428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Item Info View Controller-->
         <scene sceneID="abn-4K-ERZ">
             <objects>
-                <viewController id="a1e-Kl-twb" sceneMemberID="viewController">
+                <viewController id="a1e-Kl-twb" customClass="ItemInfoViewController" customModule="LaPampa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KdI-JG-t2K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sabor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adm-dc-8Vn">
+                                <rect key="frame" x="98" y="170" width="188" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vqc-eq-TQ2"/>
                         <color key="backgroundColor" red="0.0059299900469999998" green="0.13553561510000001" blue="0.1613442333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="HOx-mu-hx5"/>
+                    <connections>
+                        <outlet property="itemLabel" destination="adm-dc-8Vn" id="OC8-aL-7ft"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9h-cw-lC5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2929" y="-233"/>
+            <point key="canvasLocation" x="2928.985507246377" y="-233.03571428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dWm-EL-cEr">
