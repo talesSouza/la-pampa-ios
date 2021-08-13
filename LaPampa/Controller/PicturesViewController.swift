@@ -6,7 +6,7 @@ class PicturesViewController: UIViewController {
     @IBOutlet weak var pictureCollectionView: UICollectionView!
     
     // MARK: - Stored Properties
-    var pictures: [UIImage] = [#imageLiteral(resourceName: "laPampa2"), #imageLiteral(resourceName: "sanduba"), #imageLiteral(resourceName: "laPampa3"), #imageLiteral(resourceName: "laPampa"), #imageLiteral(resourceName: "sanduba2"), #imageLiteral(resourceName: "carne")]
+    var pictures: [UIImage] = [#imageLiteral(resourceName: "laPampa2"), #imageLiteral(resourceName: "laPampa3"), #imageLiteral(resourceName: "laPampa"), #imageLiteral(resourceName: "carne")]
 }
 
 // MARK: - LifeCycle
