@@ -1,10 +1,3 @@
-//
-//  UIView+Extensions.swift
-//  LaPampa
-//
-//  Created by Bruno Moreira on 11/08/21.
-//
-
 import UIKit
 
 extension UIView {
