@@ -231,7 +231,6 @@
                                         <connections>
                                             <outlet property="itemLabel" destination="O9R-AW-udu" id="bjD-az-EeA"/>
                                             <outlet property="priceLabel" destination="Gsq-jr-VJa" id="ca8-MN-gNI"/>
-                                            <segue destination="a1e-Kl-twb" kind="show" id="cZN-kO-SCi"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -253,6 +252,7 @@
                     <navigationItem key="navigationItem" title="Menu" largeTitleDisplayMode="always" id="rLf-RI-EIV"/>
                     <connections>
                         <outlet property="menuTableView" destination="YbQ-mh-cLv" id="3q2-gE-uc5"/>
+                        <segue destination="a1e-Kl-twb" kind="show" identifier="goToItemInfo" id="3KO-nl-K8m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lJ-ob-fJe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -8,6 +8,7 @@ class MenuViewController: UIViewController {
     // MARK: - Stored Properties
     let menuService = MenuService()
     var menuItems: [MenuItem] = []
+    var selectedItem: Item?
 }
 
 // MARK: - LifeCycle
@@ -28,14 +29,10 @@ extension MenuViewController {
 // MARK: - Navigation
 extension MenuViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! ItemInfoViewController
         
-        let rowIndex = menuTableView.indexPathForSelectedRow!.row
-        let sectionIndex = menuTableView.indexPathForSelectedRow!.section
-        
-        let menuItem = menuItems[sectionIndex].items[rowIndex]
-        
-        vc.item = menuItem
+        guard let vc = segue.destination as? ItemInfoViewController,
+              let selectedItem = selectedItem else { return }
+        vc.item = selectedItem
     }
 }
 
@@ -43,6 +40,11 @@ extension MenuViewController {
 extension MenuViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuItems[section].items.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedItem = menuItems[indexPath.section].items[indexPath.row]
+        performSegue(withIdentifier: "goToItemInfo", sender: self)
     }
 }
 
