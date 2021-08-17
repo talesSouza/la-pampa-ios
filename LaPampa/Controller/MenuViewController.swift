@@ -4,6 +4,8 @@ class MenuViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet weak var menuTableView: UITableView!
+    @IBOutlet var shoppingCartButtonItem: UIButton!
+    @IBOutlet weak var totalItemsLabel: UILabel!
     
     // MARK: - Stored Properties
     let menuService = MenuService()
@@ -24,6 +26,11 @@ extension MenuViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
     }
+}
+
+// MARK: - Functions
+extension MenuViewController {
+    
 }
 
 // MARK: - Navigation

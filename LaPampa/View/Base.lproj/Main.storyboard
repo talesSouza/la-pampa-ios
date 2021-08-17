@@ -179,7 +179,7 @@
             </objects>
             <point key="canvasLocation" x="2032" y="472"/>
         </scene>
-        <!--Menu-->
+        <!--Cardápio-->
         <scene sceneID="9N2-BT-qec">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="PXm-eF-d5c" customClass="MenuViewController" customModule="LaPampa" customModuleProvider="target" sceneMemberID="viewController">
@@ -188,7 +188,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YbQ-mh-cLv">
-                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="626"/>
                                 <color key="backgroundColor" red="0.0059299900469999998" green="0.13553561510000001" blue="0.1613442333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="menuItemCell" rowHeight="75" id="g7f-a5-ue9" customClass="MenuItemTableViewCell" customModule="LaPampa" customModuleProvider="target">
@@ -276,19 +276,48 @@
                                     <outlet property="delegate" destination="PXm-eF-d5c" id="xHL-1m-fMu"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybK-tN-LSF">
+                                <rect key="frame" x="184" y="798" width="46" height="40"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="shoppingCart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-5y-ttk">
+                                <rect key="frame" x="225" y="788" width="15" height="25"/>
+                                <color key="backgroundColor" red="0.01734594243" green="0.39645816579999998" blue="0.47195151419999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Yab-VX-rLH"/>
+                                    <constraint firstAttribute="width" constant="15" id="gYK-ZW-kTM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c1l-7n-l70"/>
                         <color key="backgroundColor" red="0.0059299900473790412" green="0.1355356151290294" blue="0.161344233256701" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="c1l-7n-l70" firstAttribute="bottom" secondItem="YbQ-mh-cLv" secondAttribute="bottom" id="NVS-4Y-oP5"/>
+                            <constraint firstItem="c1l-7n-l70" firstAttribute="bottom" secondItem="ybK-tN-LSF" secondAttribute="bottom" constant="24" id="3G9-WZ-Fcq"/>
+                            <constraint firstItem="c1l-7n-l70" firstAttribute="trailing" secondItem="SF7-5y-ttk" secondAttribute="trailing" constant="174" id="7jp-33-Pg4"/>
+                            <constraint firstItem="ybK-tN-LSF" firstAttribute="top" secondItem="YbQ-mh-cLv" secondAttribute="bottom" constant="32" id="Hu2-1g-dZQ"/>
+                            <constraint firstItem="c1l-7n-l70" firstAttribute="bottom" secondItem="YbQ-mh-cLv" secondAttribute="bottom" constant="96" id="OoO-sY-ixe"/>
+                            <constraint firstItem="c1l-7n-l70" firstAttribute="trailing" secondItem="ybK-tN-LSF" secondAttribute="trailing" constant="184" id="S7M-on-MWf"/>
+                            <constraint firstItem="ybK-tN-LSF" firstAttribute="leading" secondItem="c1l-7n-l70" secondAttribute="leading" constant="184" id="Zzr-dB-Jmf"/>
                             <constraint firstItem="YbQ-mh-cLv" firstAttribute="top" secondItem="c1l-7n-l70" secondAttribute="top" id="bDr-i1-gAW"/>
                             <constraint firstItem="c1l-7n-l70" firstAttribute="trailing" secondItem="YbQ-mh-cLv" secondAttribute="trailing" id="cZP-xl-bgn"/>
                             <constraint firstItem="YbQ-mh-cLv" firstAttribute="leading" secondItem="c1l-7n-l70" secondAttribute="leading" id="r9s-mu-wel"/>
+                            <constraint firstItem="c1l-7n-l70" firstAttribute="bottom" secondItem="SF7-5y-ttk" secondAttribute="bottom" constant="49" id="wOQ-l0-3T6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Menu" largeTitleDisplayMode="always" id="rLf-RI-EIV"/>
+                    <navigationItem key="navigationItem" title="Cardápio" id="5o7-dA-i2q"/>
                     <connections>
                         <outlet property="menuTableView" destination="YbQ-mh-cLv" id="3q2-gE-uc5"/>
+                        <outlet property="shoppingCartButtonItem" destination="ybK-tN-LSF" id="2P9-ba-h75"/>
+                        <outlet property="totalItemsLabel" destination="SF7-5y-ttk" id="nTb-jt-nRD"/>
                         <segue destination="a1e-Kl-twb" kind="show" identifier="goToItemInfo" id="3KO-nl-K8m"/>
                     </connections>
                 </viewController>
@@ -358,6 +387,9 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -378,5 +410,6 @@
         <image name="carne" width="362.66665649414062" height="426.66665649414062"/>
         <image name="iconLaPampa" width="360" height="360.33334350585938"/>
         <image name="list" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="shoppingCart" width="64" height="64"/>
     </resources>
 </document>

@@ -11,18 +11,26 @@ class MenuItemTableViewCell: UITableViewCell {
 
 // MARK: - Setup
 extension MenuItemTableViewCell {
-    
     func set(item: Item) {
         itemLabel.text = item.flavour
         priceLabel.text = "R$ \(String(format: "%.2f", item.price))"
+    }
+}
+    
+// MARK: - Functions
+extension MenuItemTableViewCell {
+    func setQtyLabel() {
+        if qtyStepper.value != 0 {
+            itemsQtyLabel.isHidden = false
+            itemsQtyLabel.text = "\(String(format: "%.0f", qtyStepper.value))"
+        } else { itemsQtyLabel.isHidden = true }
     }
 }
 
 // MARK: - IBActions
 extension MenuItemTableViewCell {
     @IBAction private func addItemValueChanged (_ sender: UIStepper) {
-        itemsQtyLabel.isHidden = false
-        itemsQtyLabel.text = "\(String(format: "%.0f", qtyStepper.value))"
+        setQtyLabel()
     }
 }
 
