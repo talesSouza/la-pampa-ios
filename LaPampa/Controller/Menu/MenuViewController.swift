@@ -68,6 +68,9 @@ extension MenuViewController: UITableViewDataSource {
         let item = menuItem.items[indexPath.row]
         
         cell.set(item: item)
+        //aqui nao da um "reload"
+//        totalItemsLabel.text = String(cell.totalItems.count)
+        
         
         return cell
     }

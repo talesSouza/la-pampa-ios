@@ -7,6 +7,8 @@ class MenuItemTableViewCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var itemsQtyLabel: UILabel!
     @IBOutlet weak var qtyStepper: UIStepper!
+    
+//    var totalItems: [Int] = []
 }
 
 // MARK: - Setup
@@ -31,6 +33,8 @@ extension MenuItemTableViewCell {
 extension MenuItemTableViewCell {
     @IBAction private func addItemValueChanged (_ sender: UIStepper) {
         setQtyLabel()
+//        totalItems.append(1)
+//        print(totalItems)
     }
 }
 
