@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,15 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconLaPampa" translatesAutoresizingMaskIntoConstraints="NO" id="eNR-aX-hsO">
-                                <rect key="frame" x="48" y="105" width="318" height="327"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconLaPampa" translatesAutoresizingMaskIntoConstraints="NO" id="eNR-aX-hsO">
+                                <rect key="frame" x="48" y="105" width="318" height="360.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="327" id="VjW-Tb-X96"/>
                                     <constraint firstAttribute="width" constant="318" id="YUd-W1-4Vj"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JD7-fx-Xiu">
-                                <rect key="frame" x="100" y="590" width="180" height="40"/>
+                                <rect key="frame" x="100" y="623.5" width="180" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Cfj-Qh-gha"/>
                                     <constraint firstAttribute="width" constant="180" id="T36-Rm-3oz"/>
@@ -62,7 +62,7 @@
                                 <state key="normal" backgroundImage="camera"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciE-Rf-bXW">
-                                <rect key="frame" x="285" y="593" width="35" height="35"/>
+                                <rect key="frame" x="285" y="626.5" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="KUP-fY-Sza"/>
                                     <constraint firstAttribute="width" constant="35" id="qyb-sZ-lDh"/>
@@ -179,6 +179,63 @@
             </objects>
             <point key="canvasLocation" x="2032" y="472"/>
         </scene>
+        <!--Total-->
+        <scene sceneID="3no-nb-zbg">
+            <objects>
+                <viewController id="vHP-6j-LFs" customClass="ConfirmChoicesViewController" customModule="LaPampa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q3y-vB-fs4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="vjV-sN-MsT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guo-yc-SmY">
+                                <rect key="frame" x="57" y="214" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5w-wr-dOP">
+                                <rect key="frame" x="107" y="700" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="CONFIRMAR">
+                                    <color key="titleColor" red="0.0057420183169999998" green="0.13123934079999999" blue="0.1562298647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidht">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="confirmTouchUpInside_sender:" destination="vHP-6j-LFs" eventType="touchUpInside" id="0Dw-eD-I1K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I81-cN-aXd"/>
+                        <color key="backgroundColor" red="0.09851027835806736" green="0.18423576083411569" blue="0.29989529639175261" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vjV-sN-MsT" firstAttribute="leading" secondItem="q3y-vB-fs4" secondAttribute="leading" id="7vY-NA-GxY"/>
+                            <constraint firstAttribute="trailing" secondItem="vjV-sN-MsT" secondAttribute="trailing" id="JmD-Cw-bxk"/>
+                            <constraint firstAttribute="bottom" secondItem="vjV-sN-MsT" secondAttribute="bottom" id="ORk-0P-edo"/>
+                            <constraint firstItem="vjV-sN-MsT" firstAttribute="top" secondItem="q3y-vB-fs4" secondAttribute="top" id="ro1-oN-kRB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Total" largeTitleDisplayMode="always" id="K2l-zi-Gpa"/>
+                    <connections>
+                        <outlet property="totalOrderLabel" destination="guo-yc-SmY" id="hLP-y7-Myy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sj5-k2-U08" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2929" y="-1000"/>
+        </scene>
         <!--Cardápio-->
         <scene sceneID="9N2-BT-qec">
             <objects>
@@ -282,6 +339,9 @@
                                 <state key="normal" backgroundImage="shoppingCart">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vHP-6j-LFs" kind="show" id="VfK-Cj-0fB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-5y-ttk">
                                 <rect key="frame" x="225" y="788" width="15" height="25"/>
@@ -406,10 +466,14 @@
     </scenes>
     <resources>
         <image name="Almôndega suína" width="414" height="299"/>
+        <image name="background2" width="1000" height="665"/>
         <image name="camera" width="21.333333969116211" height="21.333333969116211"/>
         <image name="carne" width="362.66665649414062" height="426.66665649414062"/>
         <image name="iconLaPampa" width="360" height="360.33334350585938"/>
         <image name="list" width="21.333333969116211" height="21.333333969116211"/>
         <image name="shoppingCart" width="64" height="64"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
