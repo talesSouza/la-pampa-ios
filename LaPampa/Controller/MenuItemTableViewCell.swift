@@ -5,6 +5,8 @@ class MenuItemTableViewCell: UITableViewCell {
     // MARK: - IBOutlets
     @IBOutlet weak var itemLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var itemsQtyLabel: UILabel!
+    @IBOutlet weak var qtyStepper: UIStepper!
 }
 
 // MARK: - Setup
@@ -15,3 +17,12 @@ extension MenuItemTableViewCell {
         priceLabel.text = "R$ \(String(format: "%.2f", item.price))"
     }
 }
+
+// MARK: - IBActions
+extension MenuItemTableViewCell {
+    @IBAction private func addItemValueChanged (_ sender: UIStepper) {
+        itemsQtyLabel.isHidden = false
+        itemsQtyLabel.text = "\(String(format: "%.0f", qtyStepper.value))"
+    }
+}
+

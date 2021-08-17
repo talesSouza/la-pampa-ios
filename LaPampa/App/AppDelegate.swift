@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  LaPampa
-//
-//  Created by Tales Silveira de Souza on 07/08/21.
-//
-
 import UIKit
 
 @main
