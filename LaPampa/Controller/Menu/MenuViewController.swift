@@ -4,13 +4,14 @@ class MenuViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet weak var menuTableView: UITableView!
-    @IBOutlet var shoppingCartButtonItem: UIButton!
+    @IBOutlet weak var shoppingCartButtonItem: UIButton!
     @IBOutlet weak var totalItemsLabel: UILabel!
     
     // MARK: - Stored Properties
     let menuService = MenuService()
     var menuItems: [MenuItem] = []
     var selectedItem: Item?
+    var itemsQty = 0.0
 }
 
 // MARK: - LifeCycle
@@ -31,6 +32,10 @@ extension MenuViewController {
 // MARK: - Functions
 extension MenuViewController {
     
+    private func itemQtyChanged(qty: Double) {
+        itemsQty += qty
+        totalItemsLabel.text = String(itemsQty)
+    }
 }
 
 // MARK: - Navigation
@@ -68,9 +73,7 @@ extension MenuViewController: UITableViewDataSource {
         let item = menuItem.items[indexPath.row]
         
         cell.set(item: item)
-        //aqui nao da um "reload"
-//        totalItemsLabel.text = String(cell.totalItems.count)
-        
+        cell.qtyDidChangeAction = itemQtyChanged(qty:)
         
         return cell
     }
